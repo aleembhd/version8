@@ -199,6 +199,14 @@
             if (callbackCard) callbackCard.addEventListener('click', () => showCallDetails('Callback'));
             if (interestedCard) interestedCard.addEventListener('click', () => showCallDetails('Interested'));
 
+            // Add event listener for the monthly button
+            const monthlyBtn = document.getElementById('monthlyBtn');
+            if (monthlyBtn) {
+                monthlyBtn.addEventListener('click', function() {
+                    window.open('monthly_calls.html', '_blank');
+                });
+            }
+
             // Add event listeners for Clear and Print buttons
             const clearDataBtn = document.getElementById('clearDataBtn');
             const printBtn = document.getElementById('printBtn');
